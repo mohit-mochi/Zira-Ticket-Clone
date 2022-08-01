@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+
+        <!--
+            ye wali link cdn js libra. hai 
+            jo fontawsome cdn se li hi hai
+        -->
+    <title>JIRA TICKET CLONE</title>
+</head>
+
+<body>
+    <!--TOOLBOX-->
+    <div class="toolbox-con">
+        <div class="toolbox-prio-con">
+            <div class="lightpink color"></div>
+            <div class="lightblue color"></div>
+            <div class="lightgreen color"></div>
+            <div class="blueviolet color"></div>
+        </div>
+        <div class="action-butt-con">
+            <div class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="rem-btn">
+                <i class="fa-solid fa-x"></i>
+                <!--
+                    Ye tag font awsome website se li hai
+                    + or cross show krne k liye upr cdn library se link
+                    lena padega.
+                -->
+            </div>
+        </div>
+    </div>
+    <!--MAIN CONTAINER
+        ticket container show honge 
+        wo wala space;
+    -->
+    <div class="main-cont">
+        <!--<div class="tic-cont">
+            <div class="tic-col ${ticketcolor}"></div>
+            <div class="tic-id">#${ticketid}</div>
+            <div class="task-cont">${tickettask}</div>
+            <div class="ticket-lock">
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-lock-open"></i>
+                
+            </div>
+        </div>
+        -->
+    </div>
+
+<!--
+    madal container jisme ticket k liye 
+    text likhenge or clr decide krenge
+    or unique id generate krenge;
+    1 unique id generate 
+    2 clr decide 
+    3 text area
+
+-->
+    <div class="modal-cont">
+        <textarea spellcheck="false" class="textarea-cont" placeholder="Enter your ticket  task"></textarea>
+
+        <div class="prio-col-cont">
+            <div class="lightpink prio-col"></div>
+            <div class="lightblue prio-col"></div>
+            <div class="lightgreen prio-col"></div>
+            <div class="blueviolet prio-col border"></div>
+        </div>
+    </div>
+    <!--
+        YE Wali script unique id generate krne k liye 
+        hai;
+    -->
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
