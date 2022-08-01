@@ -1,54 +1,54 @@
-*
-{
+* {
     box-sizing: border-box;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-body
-{
-margin: 0;
-padding: 0;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
 }
+
 /* remove button k liye */
-.fa-x
-{
-    font-size:1.4rem;
+.fa-x {
+    font-size: 1.4rem;
 }
+
 /*uppr navar wala tool box hai uske liye*/
-.toolbox-con
-{
+.toolbox-con {
     height: 5rem;
     background-color: #7ed6df;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.toolbox-con > *
-{
+
+.toolbox-con>* {
     margin-left: 4rem;
     border-radius: 10px;
-    
+
 }
-.toolbox-prio-con
-{
+
+.toolbox-prio-con {
     height: 3.5rem;
     width: 14rem;
     background-color: #130f40;
     display: flex;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 
 }
-.action-butt-con
-{
+
+.action-butt-con {
     height: 3.5rem;
     width: 5rem;
-    background-color:#30336b;
+    background-color: #30336b;
     display: flex;
 
 
 }
-.action-butt-con > *
-{
+
+.action-butt-con>* {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,61 +56,63 @@ padding: 0;
     font-size: 1.7rem;
     color: #ffffff;
 }
-.color
-{
+
+.color {
     height: 1.2rem;
     width: 2rem;
     /*background-color: #c7ecee
-    vissible mai lane k liye*/;
+    vissible mai lane k liye*/
+    ;
     border-radius: 10px;
 }
-.lightpink
-{
-background-color:crimson;
-}
-.lightgreen
-{
-    background-color:gold;
-}
-.lightblue
-{
-    background-color: rgb(12, 32, 250);
-}
-.blueviolet
-{
-    background-color: blueviolet;
-}
-.action-butt-con > *:hover
-{
-    background-color:cyan;
+
+.lightpink {
+    background-color: crimson;
 }
 
-.modal-cont
-{
-    height: 50vh;/*device port k hisab se vh or vw liya hai*/
-    width: 40vw;
-    background:#3666eb;
-    position: absolute;
-    top: calc( (100vh - 50vh)/2);
-    left: calc( (100vw - 45vw)/2 );
-    display: none;
-    border-radius: 25px;/*ye kam q nhi kr rhi*/
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    
+.lightgreen {
+    background-color: gold;
 }
-.textarea-cont
-{
+
+.lightblue {
+    background-color: rgb(12, 32, 250);
+}
+
+.blueviolet {
+    background-color: blueviolet;
+}
+
+.action-butt-con>*:hover {
+    background-color: cyan;
+}
+
+.modal-cont {
+    height: 50vh;
+    /*device port k hisab se vh or vw liya hai*/
+    width: 40vw;
+    background: #3666eb;
+    position: absolute;
+    top: calc((100vh - 50vh)/2);
+    left: calc((100vw - 45vw)/2);
+    display: none;
+    border-radius: 25px;
+    /*ye kam q nhi kr rhi*/
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.textarea-cont {
     height: 100%;
     width: 75%;
     border: none;
     outline: none;
     background-color: lightblue;
-    resize: none ;
+    resize: none;
     padding: 2rem;
-     
+
 }
-.prio-col-cont
-{
+
+.prio-col-cont {
     height: 100%;
     width: 25%;
     background-color: #130f40;
@@ -120,46 +122,45 @@ background-color:crimson;
     align-items: center;
 
 }
-.prio-col
-{
+
+.prio-col {
     height: 2.5rem;
     width: 50%;
     border-radius: 10px;
 }
-.border
-{
+
+.border {
     border: 3px solid white;
 }
 
-.tic-cont
-{
+.tic-cont {
     height: 100%;
     width: 18rem;
-    background-color:cyan;
-    
+    background-color: cyan;
+
 }
-.tic-col
-{
+
+.tic-col {
     height: 1rem;
     /*border-radius: 10px;*/
     /*background-color: rgb(247, 39, 70);*/
-    
+
 }
-.tic-id
-{
+
+.tic-id {
     height: 2rem;
     /*background-color: rgb(205, 231, 240);*/
     padding: 0.4rem;
 }
-.task-cont
-{
-    height: calc( 100% - 1rem - 2rem - 2rem );
+
+.task-cont {
+    height: calc(100% - 1rem - 2rem - 2rem);
     /*background-color:rgb(215, 233, 183);*/
     padding: 0.4rem;
     outline: none;
 }
-.ticket-lock
-{
+
+.ticket-lock {
     height: 2rem;
     /*background-color:lightblue;*/
     display: flex;
@@ -169,8 +170,8 @@ background-color:crimson;
     padding-right: 1rem;
 
 }
-.main-cont
-{
+
+.main-cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -179,56 +180,55 @@ background-color:crimson;
     gap: 1.5rem;
 
 }
-.main-cont > *
-{
+
+.main-cont>* {
     border-radius: 10px;
 
 }
-@media screen and (min-width : 425px) and (max-width : 768px )
-{
-.modal-cont
-{
-    width: 45vw;
-    left: calc( (100vw - 45vw)/2 );
-}
-.toolbox-con > *
-    {
-    margin-left: 2rem;
-    border-radius: 2px;
+
+@media screen and (min-width : 425px) and (max-width : 768px) {
+    .modal-cont {
+        width: 45vw;
+        left: calc((100vw - 45vw)/2);
+    }
+
+    .toolbox-con>* {
+        margin-left: 2rem;
+        border-radius: 2px;
     }
 
 }
+
 @media screen and (max-width : 426px) {
-    .modal-cont
-    {
+    .modal-cont {
         width: 75vw;
         height: 55vh;
-        top: calc( (100vh - 55vh)/2);
-        left: calc( (100vw - 75vw)/2 );
+        top: calc((100vh - 55vh)/2);
+        left: calc((100vw - 75vw)/2);
         flex-direction: column;
     }
-    .textarea-cont
-    {
+
+    .textarea-cont {
         width: 100%;
         height: 75%;
 
     }
-    .prio-col-cont
-    {
+
+    .prio-col-cont {
         flex-direction: row;
         width: 100%;
         height: 25%;
     }
-    .prio-col
-    {
+
+    .prio-col {
         width: 17%;
         height: 60%;
 
     }
-    .toolbox-con > *
-    {
-    margin-left: 2rem;
-    border-radius: 2px;
+
+    .toolbox-con>* {
+        margin-left: 2rem;
+        border-radius: 2px;
     }
-    
+
 }
